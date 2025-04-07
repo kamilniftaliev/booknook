@@ -128,7 +128,7 @@ export function Search({
 
               return (
                 <div
-                  key={id}
+                  key={id.toString()}
                   className={cn(
                     "flex gap-2 px-3 py-2 rounded-lg cursor-pointer shrink",
                     bookContainerClass

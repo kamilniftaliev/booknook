@@ -1,7 +1,7 @@
 import { Book } from "@/types";
 import mongoose, { Document, Schema } from "mongoose";
 
-export interface IBook extends Document, Omit<Book, "id"> {}
+export interface IBook extends Document, Omit<Book, "id" | "_id"> {}
 
 const bookSchema = new Schema<IBook>(
   {

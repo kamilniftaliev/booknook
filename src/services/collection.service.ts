@@ -35,10 +35,8 @@ export async function createCollection(data: ICollection, userId: string) {
 }
 
 export async function updateCollection(id: string, data: Partial<ICollection>) {
-  // @ts-expect-error - todo
   const books: Book[] = data.books?.filter((book) => book._id) || [];
 
-  // @ts-expect-error - todo
   const newBooks = data.books?.filter((book) => !book._id);
 
   for await (const { title, authors, imageUrl, googleId } of newBooks || []) {
@@ -50,7 +48,6 @@ export async function updateCollection(id: string, data: Partial<ICollection>) {
     id,
     {
       ...data,
-      // @ts-expect-error - todo
       books: books.map((b) => b._id),
     },
     {

@@ -31,7 +31,7 @@ export function Books({
 
         return (
           <div
-            key={_id || id}
+            key={_id || id.toString()}
             className={cn(
               `flex cursor-pointer hover:scale-[102%] hover:shadow-xl transition-all flex-col w-[20vw] grow-0 shrink-0 items-center gap-3 py-3 lg:py-6.5 px-3 lg:px-6 ${color.bg} rounded-2xl`,
               bookContainerClass

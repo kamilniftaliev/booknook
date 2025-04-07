@@ -3,6 +3,7 @@ import { Book } from "./books";
 import { User } from "./users";
 
 export type Collection = {
+  _id: string;
   id: Types.ObjectId;
   title: string;
   books: Book[];

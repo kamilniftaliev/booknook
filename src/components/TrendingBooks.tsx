@@ -36,7 +36,6 @@ export function TrendingBooks() {
       )}
       <div className="flex flex-wrap gap-5 justify-center items-start sm:gap-10 lg:gap-20">
         {books.map((book) => {
-          // @ts-expect-error - todo
           const { _id, title, authors, imageUrl } = book;
           const color = getRandomColor();
 

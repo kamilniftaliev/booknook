@@ -8,6 +8,7 @@ export type BookInputData = {
 };
 
 export type Book = BookInputData & {
+  _id: string;
   id: Types.ObjectId;
   createdAt: Date;
   updatedAt: Date;

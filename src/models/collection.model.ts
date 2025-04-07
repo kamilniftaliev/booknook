@@ -1,7 +1,7 @@
 import { Collection } from "@/types";
 import mongoose, { Document, Schema, Types } from "mongoose";
 
-export interface ICollection extends Document, Omit<Collection, "id"> {}
+export interface ICollection extends Document, Omit<Collection, "id" | "_id"> {}
 
 const collectionSchema = new Schema<ICollection>(
   {

@@ -49,7 +49,7 @@ export function BookModal({ data, setModalOpen }: Props) {
 
         // @ts-expect-error - todo
         setFullBookInfo(parsedInfo);
-      } catch (e) {
+      } catch (e: any) {
         toast.error(e.message);
       } finally {
         setIsLoading(false);
@@ -65,7 +65,7 @@ export function BookModal({ data, setModalOpen }: Props) {
             <LoaderCircle className="mx-auto opacity-60 animate-spin" />
           </DialogTitle>
         ) : (
-          <div className="">
+          <div>
             <DialogHeader>
               <DialogTitle className="text-center">
                 {fullBookInfo?.title}
@@ -93,7 +93,7 @@ export function BookModal({ data, setModalOpen }: Props) {
                 />
               </div>
               {fullBookInfo?.description && (
-                <div className="">
+                <div>
                   <DialogDescription
                     dangerouslySetInnerHTML={{
                       __html: fullBookInfo?.description || "",
