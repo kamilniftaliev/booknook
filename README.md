@@ -4,7 +4,7 @@ Book store web app built using React, Next.JS, Express, MongoDB, etc.
 
 ## Demo
 
-<video src="https://github.com/kamilniftaliev/booknook/raw/refs/heads/main/public/demo.mp4" height="400" controls></video>
+You can watch demo video tour here: https://github.com/kamilniftaliev/booknook/raw/refs/heads/main/public/demo.mp4
 
 ## Screenshots
 
